@@ -5,8 +5,13 @@ workflows:
     instance_type: mac_mini_m2
     environment:
       flutter: stable
-    trigger:
-      branch: main
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: main
+          include: true
+          source: true
     scripts:
       - name: Install dependencies
         script: |
