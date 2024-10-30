@@ -19,6 +19,9 @@ workflows:
       - name: Build Android APK
         script: |
           flutter build apk
+      - name : Show name branch    
+        script: | 
+          echo "$CM_BRANCH" | tee release_notes.txt
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
     publishing:
