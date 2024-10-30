@@ -3,7 +3,7 @@ workflows:
 name: Build App
 max _bolld_duration: 60
 instance_type: mac_mini_m2
- environment:
+environment:
 flutter: stable 9
 scripts:
 - ⁠name: Install dependencies 
