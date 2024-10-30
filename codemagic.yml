@@ -1,0 +1,23 @@
+workflows:
+ build:
+name: Build App
+max _bolld_duration: 60
+instance_type: mac_mini_m2
+ environment:
+flutter: stable 9
+scripts:
+- ⁠name: Install dependencies 
+  script: |
+  flutter pub get
+- ⁠name: Build Androi3d APK
+  script: |
+  I flutter build apk
+artifacts:
+- ⁠build/app/outputs/flutter-apk/s.apk 
+publishing:
+email:
+recipients:
+- victor.galvez56@gmail.com
+notify:
+success: true
+fallure: true
