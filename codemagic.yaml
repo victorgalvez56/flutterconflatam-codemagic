@@ -12,6 +12,7 @@ workflows:
         - pattern: main
           include: true
           source: true
+      cancel_previous_builds: false
     scripts:
       - name: Install dependencies
         script: |
