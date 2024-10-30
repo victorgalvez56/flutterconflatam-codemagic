@@ -7,11 +7,11 @@ environment:
 flutter: stable 9
 scripts:
 - ⁠name: Install dependencies 
-  script: |
-  flutter pub get
+  script: | 
+    flutter pub get
 - ⁠name: Build Androi3d APK
   script: |
-  I flutter build apk
+    I flutter build apk
 artifacts:
 - ⁠build/app/outputs/flutter-apk/s.apk 
 publishing:
